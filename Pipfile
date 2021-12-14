@@ -9,6 +9,7 @@ pytest = "*"
 pytest-xdist = "*"
 allure-pytest = "*"
 pymysql = "*"
+pytest-html = "*"
 
 [dev-packages]
 
