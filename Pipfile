@@ -8,6 +8,7 @@ requests = "*"
 pytest = "*"
 pytest-xdist = "*"
 allure-pytest = "*"
+pymysql = "*"
 
 [dev-packages]
 
