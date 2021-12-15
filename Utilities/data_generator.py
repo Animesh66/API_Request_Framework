@@ -4,7 +4,7 @@ import string
 
 
 def generate_email_password(domain=None, email_prefix=None):
-    logger.info("Generating random email and password")
+    logger.debug("Generating random email and password")
     if not domain:
         domain = 'testemail.com'
     if not email_prefix:
@@ -17,6 +17,7 @@ def generate_email_password(domain=None, email_prefix=None):
     password_length = 15
     password = ''.join(random.choices(string.ascii_letters, k=password_length))
     generator = {'email': email, 'password': password}
+    logger.debug("Email id generated {generator['email']} and password generated is {generator['password']}")
     return generator
 
 
