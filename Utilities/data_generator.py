@@ -17,9 +17,9 @@ def generate_email_password(domain=None, email_prefix=None):
     password_length = 15
     password = ''.join(random.choices(string.ascii_letters, k=password_length))
     generator = {'email': email, 'password': password}
-    logger.debug("Email id generated {generator['email']} and password generated is {generator['password']}")
+    logger.debug(f"Email id generated is {generator['email']} and password generated is {generator['password']}")
     return generator
 
 
 # var_ep = generate_email_password(domain="santa.com.au", email_prefix="animesh")
-# print(var_ep['email'], var_ep['password'])
+# print(var_ep)
