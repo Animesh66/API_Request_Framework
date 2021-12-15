@@ -14,7 +14,7 @@ class RequestsUtility:
             header = {"Content-Type": "application/json"}
         url = self.base_url + endpoint
         post_response = requests.post(url=url, data=payload, headers=header)
-        print(post_response.status_code)
+        # print(post_response.status_code)
 
     def get(self):
         pass
