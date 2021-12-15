@@ -3,6 +3,7 @@ import json
 from Utilities.data_generator import generate_email_password
 from Utilities.requests_utility import RequestsUtility
 
+
 class CustomerHelper:
 
     def __init__(self):
