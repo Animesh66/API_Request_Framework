@@ -1,7 +1,9 @@
 import requests
+import os
 
-consumer_key = 'ck_39fa25f6979b191dc83dcbcd64162d0fdb81dd14'
-consumer_secret = 'cs_0ea26b08f4793747920bfa2fa36130502dc1d0b5'
+
+consumer_key = os.getenv("WOO_CONSUMER_KEY")
+consumer_secret = os.getenv("WOO_CONSUMER_SECRET")
 
 
 def test_get_products():
