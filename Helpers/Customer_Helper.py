@@ -13,7 +13,7 @@ class CustomerHelper:
         self.password = None
 
     def create_customer(self, **kwargs):
-        generator = generate_email_password()
+        generator = generate_email_password(domain='mytest.com.au')
         self.email = generator['email']
         self.password = generator['password']
         payload = dict()
