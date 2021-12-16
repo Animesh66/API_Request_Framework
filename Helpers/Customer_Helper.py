@@ -17,4 +17,4 @@ class CustomerHelper:
         payload['email'] = email
         payload['password'] = password
         payload.update(kwargs)
-        self.requests_util.post('customers', payload=json.dumps(payload))
+        self.requests_util.post('customers', payload=json.dumps(payload), expected_status_code=201)
