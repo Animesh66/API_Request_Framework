@@ -25,8 +25,18 @@ class RequestsUtility:
         logger.debug(f"API response is {post_response.json()}")
         return post_response
 
-    def get(self):
-        pass
+    def get(self, endpoint, header=None, expected_status_code=None):
+        if not header:
+            header = {"Content-Type": "application/json"}
+        url = self.base_url + endpoint
+        get_response = requests.get(url=url, headers=header, auth=self.auth)
+        actual_status_code = get_response.status_code
+        if not expected_status_code:
+            actual_status_code = None
+        assert expected_status_code == actual_status_code, \
+            f"expected status code is {expected_status_code} but actual status code is {actual_status_code}"
+        logger.debug(f"API response is {get_response.json()}")
+        return get_response
 
     def update(self):
         pass
