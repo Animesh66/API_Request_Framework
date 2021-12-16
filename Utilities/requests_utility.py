@@ -3,7 +3,7 @@ import requests
 from Configuration.hosts_config import API_HOSTS, consumer_key, consumer_secret
 from requests_oauthlib import OAuth1
 import logging as logger
-import json
+
 
 class RequestsUtility:
 
