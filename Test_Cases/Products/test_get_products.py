@@ -1,9 +1,7 @@
 import requests
-import os
+from Configuration.hosts_config import consumer_key, consumer_secret
 
 
-consumer_key = os.getenv("WOO_CONSUMER_KEY")
-consumer_secret = os.getenv("WOO_CONSUMER_SECRET")
 
 
 def test_get_products():

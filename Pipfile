@@ -12,6 +12,7 @@ pymysql = "*"
 pytest-html = "*"
 requests-oauthlib = "*"
 oauthlib = "*"
+requests-oauth = "*"
 
 [dev-packages]
 
