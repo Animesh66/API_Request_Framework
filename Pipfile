@@ -11,6 +11,7 @@ allure-pytest = "*"
 pymysql = "*"
 pytest-html = "*"
 requests-oauthlib = "*"
+oauthlib = "*"
 
 [dev-packages]
 

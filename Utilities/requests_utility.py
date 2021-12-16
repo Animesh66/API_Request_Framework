@@ -1,7 +1,7 @@
 import os
 import requests
 from Configuration.hosts_config import API_HOSTS
-
+from requests_oauthlib import OAuth1
 
 class RequestsUtility:
 
