@@ -26,5 +26,4 @@ class CustomerHelper:
     def verify_created_email(self):
         assert self.email == self.response_json['email'], f"The given email {self.email} " \
                                                 f"is not matching with the response email {self.response_json['email']}"
-        print(self.email)
-        print(self.response_json['email'])
+
