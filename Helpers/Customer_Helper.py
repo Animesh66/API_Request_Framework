@@ -9,6 +9,7 @@ class CustomerHelper:
         self.requests_util = RequestsUtility()
         self.email = None
         self.password = None
+        self.response_json = None
 
     def create_customer(self, **kwargs):
         generator = generate_email_password()
