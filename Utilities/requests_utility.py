@@ -21,6 +21,7 @@ class RequestsUtility:
             actual_status_code = None
         assert expected_status_code == actual_status_code, \
             f"expected status code is {expected_status_code} but actual status code is {actual_status_code}"
+        return post_response
 
     def get(self):
         pass
