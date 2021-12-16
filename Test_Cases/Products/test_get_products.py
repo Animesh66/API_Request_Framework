@@ -2,8 +2,6 @@ import requests
 from Configuration.hosts_config import consumer_key, consumer_secret
 
 
-
-
 def test_get_products():
     response = requests.get("https://www.cheapgiftidea.com/wp-json/wc/v3/products",
                             auth=(consumer_key, consumer_secret))
