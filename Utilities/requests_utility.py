@@ -7,7 +7,6 @@ from requests_oauthlib import OAuth1
 class RequestsUtility:
 
     def __init__(self):
-
         self.env = os.environ.get("ENV", "test")
         self.base_url = API_HOSTS[self.env]
         self.auth = OAuth1(consumer_key, consumer_secret)
