@@ -2,7 +2,8 @@ import os
 import requests
 from Configuration.hosts_config import API_HOSTS, consumer_key, consumer_secret
 from requests_oauthlib import OAuth1
-
+import logging as logger
+import json
 
 class RequestsUtility:
 
@@ -21,6 +22,7 @@ class RequestsUtility:
             actual_status_code = None
         assert expected_status_code == actual_status_code, \
             f"expected status code is {expected_status_code} but actual status code is {actual_status_code}"
+        logger.debug(f"API response is {post_response.json()}")
         return post_response
 
     def get(self):
