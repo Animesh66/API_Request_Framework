@@ -8,7 +8,7 @@ import logging as logger
 class RequestsUtility:
 
     def __init__(self):
-        self.env = os.environ.get("ENV", "test")
+        self.env = os.getenv("ENV", "test")
         self.base_url = API_HOSTS[self.env]
         self.auth = OAuth1(consumer_key, consumer_secret)
 
