@@ -3,6 +3,7 @@ import requests
 from Configuration.hosts_config import consumer_key, consumer_secret
 
 
+@pytest.mark.product_sanity
 @pytest.mark.tcid_get_product_1
 def test_get_all_products():
     # TODO convert this to helper classes
