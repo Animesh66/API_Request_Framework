@@ -1,2 +1,3 @@
 SET WOO_CONSUMER_KEY = bla
 SET WOO_CONSUMER_SECRET = blabla
+SET ENV = test
