@@ -1,4 +1,5 @@
 import os
+from urllib.parse import urljoin
 import requests
 from Configuration.hosts_config import API_HOSTS, consumer_key, consumer_secret
 from requests_oauthlib import OAuth1
@@ -15,7 +16,8 @@ class RequestsUtility:
     def post(self, endpoint, payload=None, header=None, expected_status_code=None):
         if not header:
             header = {"Content-Type": "application/json"}
-        url = self.base_url + endpoint
+        url = urljoin(self.base_url, endpoint)
+        # url = self.base_url + endpoint
         post_response = requests.post(url=url, data=payload, headers=header, auth=self.auth)
         actual_status_code = post_response.status_code
         if not expected_status_code:
