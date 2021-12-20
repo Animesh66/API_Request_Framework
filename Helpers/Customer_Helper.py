@@ -3,6 +3,7 @@ from Utilities.data_generator import generate_email_password
 from Utilities.requests_utility import RequestsUtility
 import logging as logger
 
+
 class CustomerHelper:
 
     def __init__(self):
@@ -26,7 +27,7 @@ class CustomerHelper:
 
     def verify_created_email(self):
         assert self.email == self.post_response_json['email'], f"The given email {self.email} " \
-                    f"is not matching with the response email {self.post_response_json['email']}"
+                                                               f"is not matching with the response email {self.post_response_json['email']}"
 
     def get_customers(self, **kwargs):
         get_response = self.requests_util.get('customers', expected_status_code=200)
