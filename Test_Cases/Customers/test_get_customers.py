@@ -10,7 +10,7 @@ log = Logger(__name__, logging.INFO)
 @pytest.mark.customer_sanity
 @pytest.mark.tcid_get_customer_1
 def test_get_all_customers(woo_api_test):
-    log.logger.info("****** TEST GET CUSTOMER STARTED ******")
+    log.logger.info("****** TEST GET CUSTOMER EXECUTION STARTED ******")
     customer_helper = CustomerHelper()
     customer_helper.get_customers()
-    log.logger.info("****** TEST GET CUSTOMER STARTED ******")
+    log.logger.info("****** TEST GET CUSTOMER EXECUTION FINISHED ******")

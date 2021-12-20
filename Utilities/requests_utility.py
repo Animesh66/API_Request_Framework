@@ -28,7 +28,7 @@ class RequestsUtility:
             actual_status_code = None
         assert expected_status_code == actual_status_code, \
             f"expected status code is {expected_status_code} but actual status code is {actual_status_code}"
-        log.logger.info(f"API response is {post_response.json()}")
+        # log.logger.info(f"API response is {post_response.json()}")
         return post_response
 
     def get(self, endpoint, header=None, expected_status_code=None):
