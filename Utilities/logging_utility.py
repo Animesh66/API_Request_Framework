@@ -2,7 +2,7 @@ import logging
 import time
 
 
-class Logger():
+class Logger:
 
     def __init__(self, logger, file_level=logging.INFO):
         self.logger = logging.getLogger(logger)
