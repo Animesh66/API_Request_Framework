@@ -32,7 +32,8 @@ class CustomerHelper:
 
     def verify_created_email(self):
         assert self.email == self.post_response_json['email'], f"The given email {self.email} " \
-                                                               f"is not matching with the response email {self.post_response_json['email']}"
+                                                               f"is not matching with the response email " \
+                                                               f"{self.post_response_json['email']} "
         log.logger.info("Email verification completed.")
 
     def get_customers(self, **kwargs):
