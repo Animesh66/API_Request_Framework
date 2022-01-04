@@ -1,6 +1,6 @@
 import pytest
 import requests
-from Configuration.hosts_config import consumer_key, consumer_secret
+from Configuration.host_config import consumer_key, consumer_secret
 
 
 @pytest.mark.product_sanity
