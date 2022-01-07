@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-setup(name='ui_pytest_ecom_example',
+setup(name='API_Request_Framework',
       version='1.0',
-      description='Ecommerce project with collab f/w',
+      description='Framework for API Automation using Requests library',
       author='Animesh Mukherjee',
-      platforms='Web Application',
+      platforms='Windows, Mac , Linux',
       packages=find_packages()
       )
